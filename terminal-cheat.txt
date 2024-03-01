@@ -1,0 +1,102 @@
+cd - change directory/or back to root if you use this without path
+    cd .. back
+    cd ./folter_name
+
+cd / | cd .. - back to parent folder
+
+pwd - print work directory
+
+touch - create  file
+    touch filename.type of file
+mkdir - make directory
+    mkdir folter_name
+code - tun file (before in VS Code type in input >shell command...)
+    code filename
+
+ls - print folder content
+
+ls -l - we can use '-' щоб додати додаткові функції - напраклад показати вміст папки у виді списку.
+
+mv - from to
+    mv folder1 folder2 - this way we mover folder1 into folder2, for files the same way.
+
+cat - show file content
+
+wc - words count 
+    wc filename.txt -w
+
+
+ren - rename folder/file
+
+ren file1.txt file2.txt / folder1 folder2
+
+PIPES.
+
+Pipes allow to pass the output from one command as the input for another command.
+
+Example:
+
+Counter of words in text file.
+
+cat file1.txt | wc -w
+
+combining 2 files:
+
+
+cat file1.txt file2.txt | wc -w
+
+Redirection:
+
+Types:
+Standart Input - < - stdin -> 0 (f.ex mouse ):
+Standart Output - > - stdout -> 1 (f.ex monitor )
+Standart Error - 2> - stderr -> 2 
+
+How to create file and content it in cmd:
+
+cat >input.txt
+
+How to put in file user keyboard input:
+
+cat < inputUser.txt
+
+How to put response of crm in file:
+
+ls -l > inputCmd.txt 
+
+How to copy content from one file to another:
+
+cat input1.txt > input2.txt - input1.txt content will go to new ceated input2.txt
+
+How to get error in Redirections:
+
+1 way:
+
+ls -l 2> error.txt - here we just try to get list of items inside next path, but path doesn't exist, so error msg go to error.txt file.
+
+2 way:
+
+ls -l > outout.txt >2&1  
+
+GREP - GLOBAL REGULLAR EXPRESSION print
+
+Search inside files:
+
+grep searchValue file
+
+    grep Bohdan names.txt
+
+grep with flags:
+
+grep -i - ignoring case sensativity
+grep -w - looking for exacly I type.
+
+grep -i bohdan names.txt  - get all names that contains bohdan
+grep -w bohdan names.txt - get only bohdan names.
+
+
+Search inside folders : (grep with pipes)
+
+We want to find a folder named zip inside /bin folder:
+
+ls /bin | grep -w zip - we used flag 'w' to find exacly what we looking for - zip.

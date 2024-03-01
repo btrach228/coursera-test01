@@ -1,0 +1,7 @@
+total 40
+-rw-r--r--  1 apple  staff  223 Feb 29 22:29 info
+-rw-r--r--  1 apple  staff    6 Feb 29 22:31 input.txt
+-rw-r--r--  1 apple  staff    0 Feb 29 22:31 input1.txt
+-rw-r--r--  1 apple  staff  170 Feb 29 22:30 ls
+-rw-r--r--  1 apple  staff   89 Feb 29 22:04 text.txt
+-rw-r--r--  1 apple  staff   65 Feb 29 22:21 text2.txt
