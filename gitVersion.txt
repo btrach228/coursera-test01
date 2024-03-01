@@ -9,3 +9,22 @@ Git have 3 stages:
 
 If you made commit and want to reverte changes. use "git reset HEAD <file>..." to unstage.
 
+BRANCH:
+
+
+Check which branch you are in:
+
+git branch
+
+Create new branch:
+
+git branch <branch-name>
+git checkout -B <branch-name> - create and switch and tha same time 
+
+
+Switch between branches:
+
+git checkout <branch-name>
+
+Merging:
+
