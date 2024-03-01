@@ -1,1 +1,11 @@
 git version 2.15.0
+
+GIT:
+
+Git have 3 stages:
+1.Modifying. 
+2.After add .
+3.After Commit.
+
+If you made commit and want to reverte changes. use "git reset HEAD <file>..." to unstage.
+
