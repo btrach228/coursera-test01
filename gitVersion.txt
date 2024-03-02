@@ -26,5 +26,47 @@ Switch between branches:
 
 git checkout <branch-name>
 
-Merging:
+Local and Remote Repositories:
 
+!!BEFORE DO ANY CHANGES IN REPO DO <git pull> command to get latest version of remote repo.
+
+
+If you have remote repository and local one and you want get data from you remote to localm you can use next commands:
+
+1.create local repo: mkdir local-repo
+2.switch to this one: cd local-repo
+3.initialize local git repository: git init
+4.check that we aren't remove repository: git remote -v
+5.go to our remote repository: cd <folder-path>
+6.check remote repositoory paths copy one of them: git remote -v
+7.go to local repositoory: cd <path>
+8.connect to remote repository: git remote add origin <remote repository path>
+9.check if we are connected: git remote -v , if ok you will see path u entered on step 8 .
+10.you get all data from remote repository to your local: git pull 
+11. check in files downloaded: ls -la
+
+if you made some changes on your local repo, and want to push to remote repo, do this:
+
+save and commit changes:
+
+git add <filename> or .  - '.' means all
+git commit -m 'comment'
+git push remote origin <repo-url> / once you entered url next time you can use git push.
+
+
+GIT DIFF:
+
+This command has 2 input data and compare them : files, folders, branches.
+If compares between HEAD and data you are comparing.
+
+git diff HEAD <filename> 
+
+You cant compare between past commins untill you won't make a commit of changes.
+
+LOG DATA:
+
+You can find out about commints, how much there was, id, comments of commit.
+
+git log 
+ 
+ git log --pretty=oneline - more beauty 
